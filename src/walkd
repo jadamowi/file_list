@@ -1,0 +1,8 @@
+use::WalkDir
+
+fn walkd() {
+    for entry in WalkDir::new("foo") {
+        println!("{}", entry?.path().display());
+    }
+
+}
